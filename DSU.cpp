@@ -21,7 +21,7 @@ class DisjointSet{
      void unionByRank(int u , int v){
             int up_u = findUpar(u);
 	          int up_v = findUpar(v);
-	          if(up_u == up_p) return ;
+	          if(up_u == up_v) return ;
 	          if(rank[up_u] < rank[up_v]){
 		            parent[up_u] = up_v;
 	           }else if(rank[up_v] < rank[up_u]){
