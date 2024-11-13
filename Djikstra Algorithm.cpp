@@ -26,6 +26,6 @@ vector <int> dijkstra(int V, vector<vector<int>> adj[], int S)
             }
         }
         
-        return dist ;
+        return dist ; /* Returning Distance Array */
         
     }
