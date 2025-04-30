@@ -14,6 +14,8 @@ vector <int> dijkstra(int V, vector<vector<int>> adj[], int S)
             int node = pq.top().second ;
             int dis = pq.top().first ;
             pq.pop();
+
+            if(dis > dist[node]) continue ;
             
             for(auto& u : adj[node]){
                 int AdjNode = u[0];
